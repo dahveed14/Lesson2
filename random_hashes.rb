@@ -42,8 +42,8 @@ def select_fruit(produce)
  new_prod = produce.select do |key, value| 
   value == 'Fruit'
  end
- p new_prod
+  new_prod
 end
 
 
-select_fruit(produce) # => {"apple"=>"Fruit", "pear"=>"Fruit"}
+select_fruit(produce) == {"apple"=>"Fruit", "pear"=>"Fruit"}
